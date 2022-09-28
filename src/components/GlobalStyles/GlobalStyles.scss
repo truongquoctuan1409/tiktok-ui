@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;0,600;0,700;1,200;1,400&display=swap');
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 :root {
     --primary-color: #fe2c55;
+
+    //default layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
 }
 html {
     font-size: 62.5%;
