@@ -1,0 +1,20 @@
+//menu-wrapper
+.menu-list {
+    width: 224px;
+    //menu
+    .menu-item {
+        margin-left: 0;
+    }
+}
+.menu-popper {
+    padding-bottom: 8px;
+}
+.menu-item {
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 11px 16px;
+    &:hover {
+        background-color: var(--background-color-btn-search-hover);
+    }
+}
