@@ -7,11 +7,44 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #fe2c55;
-    --text-color: #333;
+    --white-color: #fff;
     //default layout
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
+}
+#root {
+    --primary-color: #fe2c55;
+    --text-color: #000;
+    --text-secondary-color: rgba(22, 24, 35, 0.5);
+    --background-color: #fff;
+    --background-color-search: rgba(22, 24, 35, 0.06);
+    --background-color-search-input: transparent;
+    --background-color-btn-search: rgba(22, 24, 35, 0.012);
+    --color-btn-search: rgba(22, 24, 35, 0.74);
+    --background-color-btn-search-hover: rgba(22, 24, 35, 0.03);
+    --background-color-btn-search-active: rgba(22, 24, 35, 0.06);
+    --color-search-after: rgba(22, 24, 35, 0.12);
+    --color-search-border: rgba(22, 24, 35, 0.2);
+    --color-clear-loading: rgba(22, 24, 35, 0.34);
+
+    background-color: var(--background-color);
+}
+#root.dark {
+    --primary-color: #fe2c55;
+    --text-color: #dadada;
+    --text-secondary-color: #6d6d6d;
+    --background-color: #121212;
+    --background-color-search: #2f2f2f;
+    --background-color-search-input: #2f2f2f;
+    --background-color-btn-search: #2f2f2f;
+    --color-btn-search: #767676;
+    --background-color-btn-search-hover: rgba(255, 255, 255, 0.04);
+    --background-color-btn-search-active: rgba(255, 255, 255, 0.08);
+    --color-search-after: #484848;
+    --color-search-border: rgba(22, 24, 35, 0.2);
+    --color-clear-loading: #767676;
+
+    background-color: var(--background-color);
 }
 html {
     font-size: 62.5%;
@@ -23,11 +56,13 @@ body {
     text-rendering: optimizeSpeed;
 }
 
-button, input, [tabindex]{
+button,
+input,
+[tabindex] {
     border: none;
     outline: none;
 }
-a[href]{
+a[href] {
     color: var(--text-color);
     text-decoration: none;
 }
