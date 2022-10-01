@@ -15,6 +15,9 @@
     border-radius: 0;
     padding: 11px 16px;
     line-height: 1.8rem;
+    &.separate {
+        border-top: 1px solid var(--color-search-after);
+    }
     &:hover {
         background-color: var(--background-color-btn-search-hover);
     }

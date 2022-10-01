@@ -15,7 +15,7 @@
 }
 #root {
     --primary-color: #fe2c55;
-    --text-color: #000;
+    --text-color: #161823;
     --text-secondary-color: rgba(22, 24, 35, 0.5);
     --background-color: #fff;
     --background-color-search: rgba(22, 24, 35, 0.06);
@@ -66,4 +66,24 @@ input,
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+//custom tippy
+body {
+    .tippy-box {
+        background-color: rgba(84, 84, 84, 0.92);
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-arrow::before {
+        top: -8px;
+    }
+    .tippy-content {
+        padding: 8px 9px;
+    }
 }

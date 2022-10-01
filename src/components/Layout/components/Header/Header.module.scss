@@ -100,6 +100,30 @@
         background-color: var(--background-color-btn-search-active);
     }
 }
+
+//Actions
+.actions {
+    display: flex;
+    align-items: center;
+}
+.action-btn {
+    background-color: transparent;
+    font-size: 2.2rem;
+    color: var(--color-btn-search);
+    padding: 4px 8px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 12px;
+    cursor: pointer;
+    user-select: none;
+}
 .more-btn {
     font-size: 2rem;
     margin-left: 28px;
