@@ -107,6 +107,9 @@
     align-items: center;
 }
 .action-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
     background-color: transparent;
     font-size: 2.2rem;
     color: var(--color-btn-search);
@@ -133,3 +136,18 @@
 }
 
 //menu
+.mess {
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fd5b5b;
+    color: #dadada;
+}

@@ -26,6 +26,8 @@ import images from '../../../../assets/images';
 import { Wrapper as PopperWrapper } from '../../../Popper/';
 import Button from '../../../Button/Button';
 import Menu from '../../../Popper/Menu';
+import Image from '../../../Image';
+// import { MailboxIcon } from '../../../../components/Icons';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -82,6 +84,8 @@ const userMenu = [
         separate: true,
     },
 ];
+const boxMessage = [1, 2, 3];
+console.log(boxMessage.length > 0 ? 'hasMessage' : '');
 
 function Header() {
     const [searchResult, setSearchResult] = useState([]);
@@ -144,6 +148,11 @@ function Header() {
                             </Tippy>
                             <Tippy delay={[0, 150]} content="Mailbox" placement="bottom">
                                 <button className={cx('action-btn')}>
+                                    {boxMessage.length > 0 ? (
+                                        <span className={cx('mess')}>{boxMessage.length}</span>
+                                    ) : (
+                                        ''
+                                    )}
                                     <FontAwesomeIcon icon={faComments} />
                                 </button>
                             </Tippy>
@@ -158,10 +167,11 @@ function Header() {
                     )}
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuItems}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
                                 src="https://taimienphi.vn/tmp/cf/aut/anh-gai-xinh-1.jpg"
                                 alt="Nguyen Van A"
+                                fallback="https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-Viet-Nam.jpg"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
