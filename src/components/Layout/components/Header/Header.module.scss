@@ -20,87 +20,6 @@
     padding: 0 var(--default-layout-horizontal-space);
 }
 
-.search,
-.search-result {
-    width: 361px;
-}
-
-.search {
-    position: relative;
-    height: var(--search-heigth);
-    background-color: var(--background-color-search);
-    border-radius: var(--search-border-radius);
-    padding-left: 16px;
-    display: flex;
-    justify-content: center;
-    border: 1.5px solid transparent;
-
-    input {
-        flex: 1;
-        padding: 12px 0;
-        height: 100%;
-        color: var(--text-color);
-        font-size: 1.6rem;
-        caret-color: red;
-        background-color: transparent;
-    }
-    input:not(:placeholder-shown) ~ .search-btn {
-        color: var(--color-btn-search);
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: var(--search-top-spacer);
-        right: 52px;
-        height: calc(var(--search-heigth) - var(--search-top-spacer) * 2);
-        width: 1px;
-        background-color: var(--color-search-after);
-    }
-
-    &:focus-within {
-        border: 1.5px solid var(--color-search-border);
-    }
-}
-.search-result {
-    padding-top: 8px;
-}
-.search-title {
-    padding: 5px 12px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
-}
-.clear,
-.loading {
-    position: absolute;
-    right: calc(var(--search-button-width) + 16px);
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--color-clear-loading);
-    background-color: transparent;
-}
-.search-btn {
-    width: var(--search-button-width);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: var(--search-border-radius);
-    border-bottom-right-radius: var(--search-border-radius);
-    font-size: 1.8rem;
-    color: var(--color-clear-loading);
-    background-color: var(--background-color-btn-search);
-
-    &:hover {
-        cursor: pointer;
-        background-color: var(--background-color-btn-search-hover);
-    }
-    &:active {
-        background-color: var(--background-color-btn-search-active);
-    }
-}
-
 //Actions
 .actions {
     display: flex;
@@ -140,14 +59,15 @@
     position: absolute;
     top: -2px;
     right: 2px;
-    width: 16px;
-    height: 16px;
-    font-size: 10px;
-    font-weight: 200;
+    padding: 0 6px;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 14px;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background: #fd5b5b;
-    color: #dadada;
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: var(--white-color);
 }

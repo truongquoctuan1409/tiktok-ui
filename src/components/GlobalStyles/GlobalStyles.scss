@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 :root {
+    --primary-color: #fe2c55;
     --white-color: #fff;
     //default layout
     --default-layout-header-height: 60px;
@@ -14,7 +15,6 @@
     --default-layout-horizontal-space: 24px;
 }
 #root {
-    --primary-color: #fe2c55;
     --text-color: #161823;
     --text-secondary-color: rgba(22, 24, 35, 0.5);
     --background-color: #fff;
@@ -31,7 +31,6 @@
     background-color: var(--background-color);
 }
 #root.dark {
-    --primary-color: #fe2c55;
     --text-color: #dadada;
     --text-secondary-color: #6d6d6d;
     --background-color: #121212;
