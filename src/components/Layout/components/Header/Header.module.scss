@@ -19,8 +19,9 @@
     justify-content: space-between;
     padding: 0 var(--default-layout-horizontal-space);
 }
-.logo {
-    display: block;
+.logo-link {
+    display: flex;
+    align-items: center;
 }
 //Actions
 .actions {
