@@ -43,6 +43,16 @@ const MENU_ITEMS = [
                     code: 'vi',
                     title: 'Tiếng Việt',
                 },
+                {
+                    type: 'language',
+                    code: 'china',
+                    title: 'Shennana',
+                },
+                {
+                    type: 'language',
+                    code: 'japan',
+                    title: 'Mikami fukada',
+                },
             ],
         },
     },

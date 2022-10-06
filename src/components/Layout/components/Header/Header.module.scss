@@ -4,12 +4,17 @@
     --search-top-spacer: 8px;
     --search-button-width: 52px;
 
-    width: 100%;
-    height: var(--default-layout-header-height, 60px);
-    box-shadow: rgb(0 0 0 / 12%) 0px 1px 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: var(--default-layout-header-height, 60px);
+    background-color: var(--background-color);
+    box-shadow: rgb(0 0 0 / 12%) 0px 1px 1px;
+    z-index: 10;
 }
 .inner {
     height: 100%;
