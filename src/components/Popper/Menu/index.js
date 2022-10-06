@@ -2,9 +2,9 @@ import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 
 import styles from './Menu.module.scss';
-import { Wrapper as PopperWrapper } from '../../Popper';
-import MenuItem from './MenuItem';
-import Header from './Header';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
+import MenuItem from '~/components/Popper/Menu/MenuItem';
+import Header from '~/components/Popper/Menu/Header';
 import { useState } from 'react';
 
 const cx = classNames.bind(styles);

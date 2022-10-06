@@ -5,11 +5,11 @@ import { useEffect, useState, useRef } from 'react';
 import 'tippy.js/dist/tippy.css';
 import HeadlessTippy from '@tippyjs/react/headless';
 
-import * as searchService from '../../../../apiService/searchService';
-import AccountItem from '../../../AccountItem';
+import * as searchService from '~/services/searchService';
+import AccountItem from '~/components/AccountItem';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
+import { useDebounce } from '~/hooks';
 import styles from './Seach.module.scss';
-import { Wrapper as PopperWrapper } from '../../../Popper/';
-import { useDebounce } from '../../../../hooks/';
 
 const cx = classNames.bind(styles);
 
