@@ -15,7 +15,7 @@
 
     input {
         flex: 1;
-        padding: 12px 0;
+        padding: 12px 40px 12px 0;
         height: 100%;
         color: var(--text-color);
         font-size: 1.6rem;
@@ -57,6 +57,7 @@
     transform: translateY(-50%);
     color: var(--color-clear-loading);
     background-color: transparent;
+    z-index: 11;
 }
 .loading {
     animation: spinner 0.8s linear infinite;
